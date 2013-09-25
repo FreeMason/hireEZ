@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {background-color:#fff; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; color:#222;}
+.container {width:960px; margin:0 auto; position:relative;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+#header {width:100%; height:65px; background-color:#e0531b; border-bottom:1px solid #d4d4d4; color:#fff;}
+#header h1 {font-size:36px; text-indent:-5000px; background:transparent url(logo_pif.png) no-repeat 0 0; width:200px; height:200px; position:fixed; top:20px; left:75px;}
+#header #nav {position:absolute; right:0; top:15px;}
+#header #nav li {display:inline;}
+#header #nav li a {display:block; float:left; padding:12px 25px; font-size:13px; font-weight:bold; color:#fff; border-left:1px solid #e67549;}
+#header #nav li a:hover {background-color:#f06832; text-decoration:none;}
+#header #nav li.first a {border:none;}
+
+#content {clear:both; background-color:#f4f4f4; padding:50px 0 100px 0;}
+#content h2 {font-weight:bold; color:#222; font-size:28px;}
+#content h3 {font-weight:bold; color:#222; font-size:22px;}
+#content h4 {font-weight:bold; color:#e0531b; font-size:18px; margin-top:40px; clear:both;}
+#content em {color:#333; font-style:italic;}
+#content p {font-size:13px; line-height:15px; margin:10px 0;}
+#content .highlight {font-size:16px; color:#999; line-height:20px; padding-bottom:20px; margin-bottom:50px; border-bottom:1px solid #ddd;}
+#content .attention {border-bottom:1px solid #ddd; border-top:1px solid #ddd; padding:15px 0; margin:30px 0;}
+#content .attention h4 {margin-top:0;}
+#content #intro {margin:0 50px 0 300px;}
+#content form {margin:0 50px 0 300px;}
+#content form input {padding:10px; size:12px; color:#333; border:1px solid #ddd; width:275px;}
+#content form input.check {width:25px;}
+#content form textarea {width:600px; height:150px; padding:10px; size:12px; color:#333; border:1px solid #ddd;}
+#content form ul li {font-size:12px; color:#333; margin:2px 0;}
+#content form ul.stacked li {width:200px; float:left; display:block;}
+#content form a.submit {display:block; padding:15px; margin:20px 0; background-color:#069; color:#fff; text-align:center; width:200px; font-weight:bold;}
+#content form a:hover.submit {text-decoration:none; background-color:#09c;}
+
+#footer {background-color:#fff; border-top:1px solid #ddd; padding:40px 0; color:#999; font-size:12px;}
+#footer p {line-height:16px; margin-left:300px;}
+#footer a {color:#999; text-decoration:underline;}
+#footer a:hover {text-decoration:none; color:#069;}
+
+.showhide   { display: none; border-bottom:1px solid #ddd; padding:15px 0; margin:30px 0;}
+#vetstatus	{ margin-top: 30px;}
+
