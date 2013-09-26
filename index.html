@@ -110,12 +110,28 @@
                 <div id="vetstatus">
                   <h4>Veteran Status</h4>
                   <p><strong>Are you a Veteran of the armed forces?</strong> <input class="check" type="checkbox" onclick="showMe('veteran', this)" />Yes <input class="check" type="checkbox" />No</p>
-                </div>  
+                </div> 
+                
+                <div class="showhide" id="veteran">
+                  <h4>Documentation</h4>
+                  <p>You have indicated that you are a Veteran. In order to receive the appropriate <a href="http://www.opm.gov/policy-data-oversight/veterans-services/vet-guide/" target="_blank">Vets Preference</a> please upload Forms <strong>DD-214</strong> and <strong>SF-15</strong>.</p>
+
+                  
+                  <input type="file" name="Name" value="Name" class="input_text" id="url" title="DD-214" />
+
+                  <p><i>Note: Attaching Form DD-214 does not complete your PIF application…you still need to submit on the next page.</i></p>
+                                
+                  <p><strong>Are you more than 10% service disabled, or  qualify for "Vets Preference?"</strong> <input class="check" type="checkbox" onclick="showMe('disability', this)" />Yes <input class="check" type="checkbox" />No</p>
+                  
+                  <div class="showhide" id="disability">  
+                    <input type="file" name="Name" value="Name" class="input_text" id="url" title="SF-15" />
+                    <p><i>By skipping Forms DD-214 and SF-15, you are choosing not to provide evidence of your service. You will not receive Vets Preference, but will instead receive consideration equivalent to non-Veterans.</i></p>
+                  <div>  
+                </div>
+
+            </div> 
 
            </div> 
-
-
-            <div class="showhide" id="veteran">NOTE THIS IS A NEW DIV TO SHOW STUFF TO VETERANS ONLY</div>
 
            <h4>Submit your Application</h4>
            <p>Would you like to submit your application to serve as a Presidential Innovation Fellow?</p>
@@ -132,6 +148,7 @@
     <a id="scroll-top" href="#">Top</a>
 
 </div>
+
 
 
 

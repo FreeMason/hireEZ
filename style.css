@@ -39,8 +39,8 @@ a:hover {text-decoration:underline;}
 #footer a:hover {text-decoration:none; color:#069;}
 
 /* Styling for JS elements */
-.showhide   { display: none; border-bottom:1px solid #ddd; padding:15px 0; margin:30px 0;}
-#vetstatus	{ margin-top: 30px;}
+.showhide   { display: none; padding:15px 0; margin:10px 0;}
+#vetstatus	{ border-top:1px solid #ddd; margin-top: 30px; padding-top: 30px;}
 #footer #scroll-top {
   display: none;
   position:fixed; 
