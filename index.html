@@ -12,6 +12,20 @@
     <link href="print.css" rel="stylesheet" type="text/css" media="print" />
     <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript">
+
+          $(window).scroll(function() { // when the page is scrolled run this
+            if($(this).scrollTop() >= 100) { // if you're NOT at the top
+              $('#scroll-top').fadeIn("slow"); // fade in
+                } else { // else
+              $('#scroll-top').fadeOut("slow"); // fade out
+              }
+          });
+
+          $('#scroll-top').click(function() { // when the button is clicked
+          $('body,html').animate({scrollTop:0}, 5000); // return to the top with a nice animation
+          });
+    </script>
 
           
 </head>
@@ -114,9 +128,12 @@
 	<div class="container">
     	<p><strong>This is an official website of the United States Government</strong>, and was created by <a href="http://www.whitehouse.gov/innovationfellows/rfp-ez" target="_blank">Team Project RFP-EZ</a> as part of the Presidential Innovation Fellows program. <strong><a href="http://www.sba.gov/about-sba-info/privacy-policy">Privacy Policy</a></p>
     </div>
+
+    <a id="scroll-top" href="#">Top</a>
+
 </div>
 
-<a href="#" class="scrollup">Scroll</a>
+
 
 </body>
 </html>
