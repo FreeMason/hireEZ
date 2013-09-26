@@ -6,14 +6,13 @@
     <meta name="DC.creator" content="General Services Administration - http://gsa.gov/" />
     <meta name="DC.language" content="en" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" href="http://whitehouse.gov/sites/default/themes/whitehouse/favicon.ico" type="image/x-icon" />
+	  <link rel="shortcut icon" href="http://whitehouse.gov/sites/default/themes/whitehouse/favicon.ico" type="image/x-icon" />
     <link href="baseline.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link href="print.css" rel="stylesheet" type="text/css" media="print" />
-    <script type="text/javascript" src="jquery-1.7.2.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
-        
-        
+    <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
           
 </head>
 
@@ -44,11 +43,11 @@
     	<form id="application">
         	<h3>Apply to be a Round Three Fellow</h3>
         	<p>The Presidential Innovation Fellows (PIF) program pairs top innovators from the private sector, non-profits, and academia with top innovators in government to collaborate during focused 6 month "tours of duty" to develop solutions that can save lives, save taxpayer money, and fuel job creation.</p>
-			<input type="text" name="Name" value="This field is required" class="input_text" id="url" title="Full Name" />
-			<input type="email" name="Email" value="Email Address" class="input_text" id="email" title="Email Address" />
-			<input type="text" name="Phone" value="Phone Number" class="input_text" id="url" title="Phone Number" />
-			<input type="text" name="Address" value="City/State/Zip" class="input_text" id="url" title="Address" />
-           <input type="text" name="Company" value="Current Employeer or Company" class="input_text" id="url" title="Company" />
+			<input type="text" name="Name" value="Name" class="input_text" id="url" title="Full Name" onblur="if(this.value == '') { this.value='Name'}" onfocus="if(this.value == 'Name') { this.value = ''; }" />
+			<input type="text" name="Email" value="Email Address" class="input_text" id="email" title="Email Address" onblur="if(this.value == '') { this.value='Email Address'}" onfocus="if(this.value == 'Email Address') { this.value = ''; }"/>
+			<input type="text" name="Phone" value="Phone Number" class="input_text" id="url" title="Phone Number" onblur="if(this.value == '') { this.value='Phone Number'}" onfocus="if(this.value == 'Phone Number') { this.value = ''; }" />
+			<input type="text" name="Address" value="City/State/Zip" class="input_text" id="url" title="Address" onblur="if(this.value == '') { this.value='City/State/Zip'}" onfocus="if(this.value == 'City/State/Zip') { this.value = ''; }" />
+           <input type="text" name="Company" value="Current Employeer or Company" class="input_text" id="url" title="Company" onblur="if(this.value == '') { this.value='Current Employer or Company'}" onfocus="if(this.value == 'Current Employeer or Company') { this.value = ''; }" />
 			
            <p class="attention"><strong>Are you a US Citizen:</strong> <input class="check" type="checkbox" />Yes <input class="check" type="checkbox" />No</p>
             
@@ -116,6 +115,8 @@
     	<p><strong>This is an official website of the United States Government</strong>, and was created by <a href="http://www.whitehouse.gov/innovationfellows/rfp-ez" target="_blank">Team Project RFP-EZ</a> as part of the Presidential Innovation Fellows program. <strong><a href="http://www.sba.gov/about-sba-info/privacy-policy">Privacy Policy</a></p>
     </div>
 </div>
+
+<a href="#" class="scrollup">Scroll</a>
 
 </body>
 </html>

@@ -38,6 +38,18 @@ a:hover {text-decoration:underline;}
 #footer a {color:#999; text-decoration:underline;}
 #footer a:hover {text-decoration:none; color:#069;}
 
+/* Styling for JS elements */
 .showhide   { display: none; border-bottom:1px solid #ddd; padding:15px 0; margin:30px 0;}
 #vetstatus	{ margin-top: 30px;}
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('icon_top.png') no-repeat;
+}
 
